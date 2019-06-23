@@ -1,0 +1,500 @@
+   12  ls
+   13  su -
+   14  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg2     software-properties-common
+   15  clear
+   16  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+   17  apt-get install     apt-transport-https     ca-certificates     curl     gnupg2     software-properties-common
+   18  cls
+   19  clear
+   20  cd /etc/
+   21  ls
+   22  cd apt
+   23  nano sources.list
+   24  clear
+   25  apt-get install     apt-transport-https     ca-certificates     curl     gnupg2     software-properties-common
+   26  clear
+   27  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+   28  apt-key fingerprint 0EBFCD88
+   29  dd-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+   30     $(lsb_release -cs) \
+   31     stable"
+   32  add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+   33     $(lsb_release -cs) \
+   34     stable"
+   35  clear
+   36  apt-get update
+   37  apt-get install docker-ce docker-ce-cli containerd.io
+   38  apt-cache madison docker-ce
+   39  docker run hello-world
+   40  docker run -it ubuntu bash
+   41  apt update
+   42  apt-cache policy docker-ce
+   43  clear
+   44  docker
+   45  cd home
+   46  ls
+   47  cd Bureau/
+   48  ls
+   49  history
+   50  cd /home
+   51  ls
+   52  cd hamza
+   53  ls
+   54  cclear
+   55  clear
+   56  cd /home/jovyan/COURS1
+   57  find jovyan
+   58  clear
+   59  cd ../..
+   60  l
+   61  ls
+   62  dev
+   63  cd /home/
+   64  ls
+   65  docker
+   66  clear
+   67  curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   68  chmod +x /usr/local/bin/docker-compose
+   69  n -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+   70  ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+   71  docker-compose --version
+   72  clear
+   73  clear
+   74  docker-compose up
+   75  cler
+   76  clear
+   77  ls
+   78  cd Bureau/
+   79  ls
+   80  cd ESGI_nosql_2019-master/
+   81  docker-compose up
+   82  ls
+   83  cd sources/
+   84  clear
+   85  docker-compose up
+   86  type
+   87  ls
+   88  nano docker-compose.yml 
+   89  clear
+   90  docker-compose up
+   91  clear
+   92  docker-compose up
+   93  history
+   94  history
+   95  docker-compose up
+   96  ls
+   97  cd Documents/
+   98  ls
+   99  git init
+  100  ls -al
+  101  clear
+  102  git clone https://github.com/guissart/ESGI_nosql_2019.git
+  103  ls 
+  104  cd Es
+  105  cd Es
+  106  cd ESGI_nosql_2019/
+  107  ls
+  108  cd sources/
+  109  ls
+  110  cd python
+  111  ls
+  112  ls /home/
+  113  ls /home/hamza
+  114  ls
+  115  cd /root
+  116  ls
+  117  cd B
+  118  cd Bureau/
+  119  ls
+  120  cd -
+  121  cd -
+  122  cd -
+  123  cd Documents/
+  124  ls
+  125  cd ESGI_nosql_2019/
+  126  cd python
+  127  cd Python
+  128  cd sources/
+  129  ls
+  130  cd python/
+  131  l
+  132  ls
+  133  clear
+  134  cp twitter_to_neo4j_correction_V2.ipynb /root/Bureau/ESGI_nosql_2019-master/sources/python/
+  135  ls
+  136  clear
+  137  ls
+  138  cd ..
+  139  ls
+  140  cd data
+  141  ls
+  142  cp list_request_neo4j.txt  restaurants.json /root/Bureau/ESGI_nosql_2019-master/sources/data/
+  143  ls
+  144  cd /root
+  145  cd Bureau/
+  146  cd ESGI_nosql_2019-master/
+  147  cd sources/
+  148  ls
+  149  cd python/
+  150  ls
+  151  cd ../data
+  152  ls
+  153  clear
+  154  ls
+  155  cd /root/
+  156  ls
+  157  cd Te
+  158  cd Téléchargements/
+  159  ls
+  160  cd /tmp
+  161  ls
+  162  cd mozilla_root0/
+  163  ls
+  164  mkdir /home/hamza/Kafka
+  165  ls
+  166  cd ..
+  167  ls
+  168  ls
+  169  cd mozilla_root0/
+  170  ls
+  171  clear
+  172  cd /home/hamza/Kafka/
+  173  ls
+  174  cd kafka_2.11-0.9.0.0
+  175  ls
+  176  cd bin
+  177  ls
+  178  ./kafka-server-start.sh ../config/server.properties &
+  179  ./kafka-topics.sh --create --zookeepr localhost:2181 --replication-factor 1 --partitions 1 --topic socialMedia
+  180  ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic socialMedia
+  181  ./kafka-topics.sh --list --zookeeper localhost:2181
+  182  clear
+  183  cd /home
+  184  cd hamza/
+  185  ls
+  186  ls Kafka/
+  187  cd /root/
+  188  ls
+  189  cd Bureau/
+  190  ls
+  191  cp kafka_2.11-0.9.0.0.tgz /home/hamza/Kafka/
+  192  ls
+  193  cd /home/hamza/Kafka/
+  194  ls
+  195  clear
+  196  ls -al
+  197  tar -xzvf kafka_2.11-0.9.0.0.tgz 
+  198  clear
+  199  ls
+  200  cd kafka_2.11-0.9.0.0
+  201  ls
+  202  cd bin
+  203  ls
+  204  ./zookeeper-server-start.sh ../config/zookeeper.properties &
+  205  clear
+  206  cd Bureau/
+  207  ls
+  208  docker exec -it
+  209  docker exec -it ESGI_MONGO bash
+  210  cd /tmp/mozilla_root0/
+  211  ls
+  212  tar -xzvf robo3t-1.3.1-linux-x86_64-7419c406.tar.gz 
+  213  ls
+  214  cd robo3t-1.3.1-linux-x86_64-7419c406
+  215  clea
+  216  clear
+  217  ls
+  218  cd bin
+  219  ls
+  220  ./robo3t 
+  221  history
+  222  ls
+  223  cd Bureau/
+  224  ls
+  225  cd ESGI_nosql_2019-master/
+  226  ls
+  227  cd sources/
+  228  ls
+  229  cd docker
+  230  ls
+  231  cd ..
+  232  docker-compose up
+  233  ls
+  234  cd Bureau/
+  235  mkdir NoSQL
+  236  cd NoSQL/
+  237  cls
+  238  clear
+  239  git clone https://github.com/guissart/ESGI_nosql_2019.git
+  240  ls
+  241  cd ES
+  242  cd ESGI_nosql_2019/
+  243  ls
+  244  cd sources/
+  245  clear
+  246  docker-compose up
+  247  apt-get install jupyter
+  248  clear
+  249  apt get update
+  250  clear
+  251  apt-get update
+  252  cclear
+  253  clear
+  254  clear
+  255  l
+  256  clear
+  257  python -v
+  258  clea
+  259  clear
+  260  python 
+  261  clear
+  262  apt-get install -y python3-pip
+  263  clear
+  264  python3 -v
+  265  python --version
+  266  clear
+  267  python
+  268  clear
+  269  apt install python3-pip python3-dev
+  270  -H pip3 install --upgrade pip
+  271  clear
+  272  ls
+  273  cd Documents/
+  274  ls
+  275  mkdir TripAdvisor_NoSQL
+  276  ls
+  277  cd TripAdvisor_NoSQL/
+  278  virtualenv tripadvisorenv
+  279  pip install jupyter
+  280  clear
+  281  apt install python3-pip
+  282  pip install xlrd
+  283  clear
+  284  apt install python-pip
+  285  clear
+  286  pip install xlrd
+  287  clear
+  288  pip install jupyter
+  289  clear
+  290  virtualenv tripadvisorenv
+  291  pip install virtualenv
+  292  ls /usr/bin
+  293  /usr/bin/easy_install virtualenv
+  294  virtualenv tripadvisorenv
+  295  clear
+  296  source tripadvisorenv/bin/activate
+  297  jupyter notebook
+  298  jupyter notebook
+  299  su developper
+  300  su hamza
+  301  clear
+  302  cd ..
+  303  source tripadvisorenv/bin/activate
+  304  jupyter notebook --allow-root
+  305  clear
+  306  source tripadvisorenv/bin/activate
+  307  jupyter notebook --allow-root
+  308  clear
+  309  jupyter notebook --allow-root
+  310  clear
+  311  jupyter notebook --allow-root
+  312  cd Documents/
+  313  ls
+  314  cd TripAdvisor_NoSQL/
+  315  clear
+  316  ls
+  317  git init
+  318  git add *
+  319  m*git statuts
+  320  git status
+  321  clear
+  322  git status
+  323  clear
+  324  git commit -m "Commit with env and Jupyter notebook"
+  325  git config --global user.email "hamza.essamami.sio@gmail.com"
+  326  git config --global user.name "ESSAMAMI"
+  327  git commit -m "Commit with env and Jupyter notebook"
+  328  git remote add origin https://github.com/ESSAMAMI/NoSQL_tripadvisor.git
+  329  git push -u origin master
+  330  pip install boto3
+  331  clear
+  332  curl
+  333  curl https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6/albums?album_type=SINGLE&offset=20&limit=10
+  334  clear
+  335  pip install spotipy
+  336  curl https://api.spotify.com/v1/artists/6ac501309e3b4f5c83c9cf0af07ec7d6/albums?album_type=SINGLE&offset=20&limit=10
+  337  clear
+  338  curl https://api.spotify.com/v1/artists/3e43fcba11c44157a30e9226a13b7f39/albums?album_type=SINGLE&offset=20&limit=10
+  339  lear
+  340  clearé
+  341  python spotify2.py 129206905
+  342  clear
+  343  git clone https://github.com/plamere/spotipy.git
+  344  ls
+  345  cd spotipy/
+  346  ls
+  347  python install spotipy/
+  348  python install setup.py 
+  349  cd ..
+  350  clear
+  351  python install spotipy/
+  352  clear
+  353  cd spotipy/
+  354  clear
+  355  ls
+  356  python setup.py install
+  357  python spotify.py 129206905
+  358  clear
+  359  rm -rf spotipy
+  360  clear
+  361  pip install json
+  362  clear
+  363  export SPOTIFY_CLIENT_ID='6ac501309e3b4f5c83c9cf0af07ec7d6'
+  364  export SPOTIFY_CLIENT_SECRET='8e23f5a287ea43b5af5a3d58634299cb'
+  365  export SPOTIFY_REDIRECT_URI='https://google.com/'
+  366  clear
+  367  ls
+  368  cd ..
+  369  ls
+  370  rm -rf spotipy/
+  371  ls
+  372  clear
+  373  touch spotipyApi.py
+  374  clear
+  375  ls
+  376  clear
+  377  python spotipyApi.py 
+  378  python3 --version
+  379  clear
+  380  clear
+  381  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  382  pip3 install spotipy
+  383  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  384  export SPOTIPY_CLIENT_ID='6ac501309e3b4f5c83c9cf0af07ec7d6'
+  385  export SPOTIPY_CLIENT_SECRET='8e23f5a287ea43b5af5a3d58634299cb'
+  386  export SPOTIPY_REDIRECT_URI='https://google.com/'
+  387  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  388  clear
+  389  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  390  clear
+  391  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  392  clear
+  393  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  394  export SPOTIPY_REDIRECT_URI='http://google.com/'
+  395  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  396  clear
+  397  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  398  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  399  clear
+  400  clear
+  401  clea
+  402  clear
+  403  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  404  clear
+  405  cldear
+  406  clear
+  407  clear
+  408  slkn
+  409  clear
+  410  python3 spotipyApi.py
+  411  clear
+  412  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  413  clear
+  414  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  415  clear
+  416  pip install simpljson
+  417  pip install simplejson
+  418  clear
+  419  clear
+  420  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  421  clear
+  422  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  423  clear
+  424  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  425  clear
+  426  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  427  clear
+  428  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  429  clear
+  430  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  431  clear
+  432  python3 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  433  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  434  clear
+  435  pip install simplejson
+  436  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  437  pip install -U simplejson
+  438  clear
+  439  pip install -U simplejson
+  440  clear
+  441  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  442  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  443  clear
+  444  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  445  python -V
+  446  python3 -V
+  447  python3.6 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  448  uname -a
+  449  apt install python3.6
+  450  apt update
+  451  apt install python3.6
+  452  apt list --upgradable
+  453  nano ~/.bashrc 
+  454  source $!
+  455  source $!!
+  456  source ~/.bashrc 
+  457  python -V
+  458  clear
+  459  clea
+  460  clear
+  461  python3.6 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  462  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  463  python3.6 spotipyApi.py b83icoww1uhwplsp488xnufy3
+  464  uname -a
+  465  clear
+  466  pip3 istall simplejson
+  467  pip3 install simplejson
+  468  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  469  clear
+  470  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  471  clear
+  472  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  473  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  474  clear
+  475  ll
+  476  source ~/.bashrc 
+  477  nano ~/.bashrc 
+  478  source ~/.bashrc 
+  479  ll
+  480  tree
+  481  apt-get install tree
+  482  tree
+  483  clear
+  484  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  485  clear
+  486  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  487  clear
+  488  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  489  clear
+  490  clear
+  491  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  492  pip3 install panda
+  493  clear
+  494  pip3 install pandas
+  495  pip3 install numpy
+  496  pip3 install pandas
+  497  clear
+  498  python spotipyApi.py b83icoww1uhwplsp488xnufy3
+  499  cd Documents/
+  500  ls
+  501  cd TR
+  502  cd TripAdvisor_NoSQL/
+  503  clear
+  504  ls
+  505  source tripadvisorenv/bin/activat
+  506  source tripadvisorenv/bin/activate
+  507  clear
+  508  jupyter notebook
+  509  clear
+  510  history
+  511  history > history.txt
